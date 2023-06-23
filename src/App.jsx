@@ -13,7 +13,7 @@ function App() {
   const [darkmode, setDarkmode] = useState(false);
 
   const fetchData = () => {
-    let url = '';
+    let url;
     if (cName) {
       url = `https://restcountries.com/v3.1/name/${cName}`;
     } else {
@@ -32,23 +32,6 @@ function App() {
         console.log(json);
         console.log(data);
       })
-
-
-    // if (!data) {
-    //   const url = 'https://restcountries.com/v3.1/all';
-    //   fetch(url)
-    //     .then(res => res.json())
-    //     .then(json => {
-    //       if (json.status == 404) {
-    //         setMessage('검색어를 다시 입력해주세요');
-    //       }
-    //       setData(json);
-    //       console.log(json);
-    //       console.log(data);
-    //     })
-    // }
-
-
   }
 
   useEffect(() => {
@@ -68,16 +51,13 @@ function App() {
     setDarkmode(!darkmode);
     if (darkmode == false) {
       document.body.classList.add('darkmode');
-      // document.body.style.backgroundColor = '#2b3945';
     } else {
       document.body.classList.remove('darkmode');
-      // document.body.style.backgroundColor = '#faf5f5';
     }
   }
 
 
   return (
-    // <div className={darkmode ? 'App darkmode' : 'App'}>
     <div className='App'>
       <Navbar darkBtn={darkBtn} darkmode={darkmode} />
       <Routes>

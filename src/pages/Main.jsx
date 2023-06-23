@@ -15,7 +15,7 @@ function Main(props) {
                 {data ? data.map((item, i) => {
                     return (
                         <li key={i}>
-                            <img src={item.flags.png} onClick={() => { navi(`/detail/${i}`) }} />
+                            <img src={item.flags.png} onClick={() => { navi(`/detail/${item.cca3}`) }} />
                             <h3>{item.name.common}</h3>
                             <h3>{item.translations.kor.common}</h3>
                             <h3>Population: <span>{item.population.toLocaleString()}</span></h3>
