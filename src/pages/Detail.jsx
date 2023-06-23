@@ -6,11 +6,12 @@ function Detail(props) {
     let navi = useNavigate();
     let { data, darkmode } = props;
     console.log(params.id);
-    let obj = data[params.id].languages;
-    let obj2 = Object.values(obj);
+    // let obj = data[params.id].languages;
+    // let obj2 = Object.values(obj);
+    let obj = Object.values(data[params.id].languages);
     console.log(obj);
-    console.log(obj2);
-    console.log(obj2.length);
+    // console.log(obj2);
+    // console.log(obj2.length);
 
 
 
@@ -28,12 +29,12 @@ function Detail(props) {
                     <div className='info'>
                         <h3>{data[params.id].name.common}{data[params.id].translations.kor.common}</h3>
                         <h3>Population: <span>{data[params.id].population.toLocaleString()}</span></h3>
-                        <h3>Population: <span>{data[params.id].region}</span></h3>
-                        <h3>Population: <span>{data[params.id].capital}</span></h3>
-                        <h3>Population: <span>{data[params.id].subregion}</span></h3>
-                        <h3>Population: <span>{data[params.id].cca2}</span></h3>
+                        <h3>Region: <span>{data[params.id].region}</span></h3>
+                        <h3>Capital: <span>{data[params.id].capital}</span></h3>
+                        <h3>Sub Region: <span>{data[params.id].subregion}</span></h3>
+                        <h3>Top Level Domain: <span>{data[params.id].cca2}</span></h3>
                         <h3>Languages:
-                            {obj2.map((item, i) => {
+                            {obj.map((item, i) => {
                                 console.log(item);
                                 return (
                                     <span key={i}>{item}</span>

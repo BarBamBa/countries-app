@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
 
-  const [data, setData] = useState('');
+  const [data, setData] = useState(null);
   const [cName, setcName] = useState('');
   const [message, setMessage] = useState('');
   const [darkmode, setDarkmode] = useState(false);
