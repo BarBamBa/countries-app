@@ -1,20 +1,9 @@
-body {
-  margin: 0;
-  background-color: #faf5f5;
-}
-
-button {cursor:pointer; background-color: inherit; color: inherit;}
+body { margin: 0; background-color: #faf5f5; }
+.darkmode { background-color: #2b3945; color: white; }
+button { cursor:pointer; background-color: inherit; color: inherit;}
 input { background-color: inherit; color: inherit;}
-
-.App {
-  max-width: 1440px;
-  margin: auto;
-}
-
-.darkmode {
-  background-color: #2b3945;
-  color: white;
-}
+li { list-style: none;}
+.App { max-width: 1440px; margin: auto; }
 
 .navbar {
   display: flex;
@@ -31,22 +20,9 @@ input { background-color: inherit; color: inherit;}
   border-radius: 8px;
 }
 
-/* .navbar > * {
-  margin: 0px 10px;
-} */
+.main-page { padding: 8px; }
 
-li {
-  list-style: none;
-}
-
-.main-page {
-  padding: 8px;
-}
-
-.search-area {
-  display: flex;
-  justify-content: center;
-}
+.search-area { display: flex; justify-content: center; }
 
 .search-area button {
   width: 80px;
@@ -56,43 +32,22 @@ li {
   border-radius: 8px;
 }
 
-.search-area input {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 8px;
-}
+.search-area input { border: 1px solid #ccc; border-radius: 8px; padding: 8px; }
 
 .card-list {
   margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   color: black;
   position: relative;
 }
 
-.card-list li {
-  background-color: white;
-  margin: 24px 16px;
-}
+.card-list li { background-color: white; margin: 24px 16px; }
+.card-list img { width: 320px; height: 180px; }
+.card-list h3, p { margin: 10px; }
+.card-list span { font-weight: lighter; }
 
-.card-list img {
-  width: 320px;
-  height: 180px;
-}
-
-.card-list h3, p {
-  margin: 10px;
-}
-
-.card-list span {
-  font-weight: lighter;
-}
-
-.detail-page {
-  margin: 24px 16px;
-  padding: 8px;
-}
+.detail-page { margin: 24px 16px; padding: 8px; }
 
 .detail-page button {
     width: 80px;
@@ -102,33 +57,11 @@ li {
     border-radius: 8px;
 }
 
-.detail-info {
-  margin-top: 24px;
-}
+.detail-info { margin-top: 24px; }
+.detail-info li { display: flex; }
+.detail-info img { width: 500px; height: 300px; }
+.detail-info h3, p, span { margin: 10px; }
+.info { margin-left: 30px; }
+.info span { font-weight: lighter; }
 
-.detail-info li {
-  display: flex;
-}
-
-.detail-info img {
-  width: 500px;
-  height: 300px;
-}
-
-.detail-info h3, p, span {
-  margin: 10px;
-}
-
-.info {
-  margin-left: 30px;
-}
-
-.info span {
-  font-weight: lighter;
-}
-
-.error {
-  position: absolute;
-  left: 40%;
-  color: red;
-}
+.error { left: 40%; color: red; margin:auto !important;}
