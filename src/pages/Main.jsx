@@ -18,7 +18,7 @@ function Main(props) {
                             <img src={item.flags.png} onClick={() => { navi(`/detail/${i}`) }} />
                             <h3>{item.name.common}</h3>
                             <h3>{item.translations.kor.common}</h3>
-                            <h3>Population: <span>{item.population}</span></h3>
+                            <h3>Population: <span>{item.population.toLocaleString()}</span></h3>
                             <h3>Region: <span>{item.region}</span></h3>
                             <h3>Capital: <span>{item.capital}</span></h3>
                         </li>

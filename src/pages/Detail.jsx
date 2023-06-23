@@ -27,7 +27,7 @@ function Detail(props) {
                     </div>
                     <div className='info'>
                         <h3>{data[params.id].name.common}{data[params.id].translations.kor.common}</h3>
-                        <h3>Population: <span>{data[params.id].population}</span></h3>
+                        <h3>Population: <span>{data[params.id].population.toLocaleString()}</span></h3>
                         <h3>Population: <span>{data[params.id].region}</span></h3>
                         <h3>Population: <span>{data[params.id].capital}</span></h3>
                         <h3>Population: <span>{data[params.id].subregion}</span></h3>
