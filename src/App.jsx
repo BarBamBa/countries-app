@@ -20,16 +20,16 @@ function App() {
       url = 'https://restcountries.com/v3.1/all'
     }
     fetch(url)
-      .then(res => res.json())
-      .then(json => {
-        if (json.status == 404) {
+      .then(res => {
+        if (res.ok) {
+          return res.json()
+        } else {
           setMessage('검색어를 다시 입력해주세요');
-          setData(null);
           console.log(message);
-          return;
         }
+      })
+      .then(json => {
         setData(json);
-        console.log(json);
         console.log(data);
       })
   }

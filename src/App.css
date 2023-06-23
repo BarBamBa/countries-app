@@ -3,11 +3,12 @@ body {
   background-color: #faf5f5;
 }
 
-button { background-color: inherit; color: inherit;}
+button {cursor:pointer; background-color: inherit; color: inherit;}
 input { background-color: inherit; color: inherit;}
 
 .App {
   max-width: 1440px;
+  margin: auto;
 }
 
 .darkmode {
