@@ -65,3 +65,8 @@ li { list-style: none;}
 .info span { font-weight: lighter; }
 
 .error { left: 40%; color: red; margin:auto !important;}
+
+@media (max-width: 800px) {
+  .detail-info li { display: flex; flex-direction: column;}
+
+}
